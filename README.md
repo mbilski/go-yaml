@@ -1,9 +1,9 @@
 # YAML support for the Go language
 
-[![GoDoc](https://godoc.org/github.com/goccy/go-yaml?status.svg)](https://godoc.org/github.com/goccy/go-yaml)
-[![CircleCI](https://circleci.com/gh/goccy/go-yaml.svg?style=shield)](https://circleci.com/gh/goccy/go-yaml)
-[![codecov](https://codecov.io/gh/goccy/go-yaml/branch/master/graph/badge.svg)](https://codecov.io/gh/goccy/go-yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/goccy/go-yaml)](https://goreportcard.com/report/github.com/goccy/go-yaml)
+[![GoDoc](https://godoc.org/github.com/mbilski/go-yaml?status.svg)](https://godoc.org/github.com/mbilski/go-yaml)
+[![CircleCI](https://circleci.com/gh/mbilski/go-yaml.svg?style=shield)](https://circleci.com/gh/mbilski/go-yaml)
+[![codecov](https://codecov.io/gh/mbilski/go-yaml/branch/master/graph/badge.svg)](https://codecov.io/gh/mbilski/go-yaml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mbilski/go-yaml)](https://goreportcard.com/report/github.com/mbilski/go-yaml)
 
 <img width="300px" src="https://user-images.githubusercontent.com/209884/67159116-64d94b80-f37b-11e9-9b28-f8379636a43c.png"></img>
 
@@ -27,7 +27,7 @@ As of this writing, there already exists a defacto standard library for YAML pro
 # Installation
 
 ```sh
-go get -u github.com/goccy/go-yaml
+go get -u github.com/mbilski/go-yaml
 ```
 
 # Synopsis
@@ -312,7 +312,7 @@ package main
 import (
   "fmt"
 
-  "github.com/goccy/go-yaml"
+  "github.com/mbilski/go-yaml"
 )
 
 func main() {
@@ -358,7 +358,7 @@ print yaml file with color
 ### Installation
 
 ```sh
-go get -u github.com/goccy/go-yaml/cmd/ycat
+go get -u github.com/mbilski/go-yaml/cmd/ycat
 ```
 
 # License

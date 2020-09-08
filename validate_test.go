@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goccy/go-yaml"
+	"github.com/mbilski/go-yaml"
 	"gopkg.in/go-playground/validator.v9"
 )
 

@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
-	"github.com/goccy/go-yaml/lexer"
-	"github.com/goccy/go-yaml/token"
+	"github.com/mbilski/go-yaml/ast"
+	"github.com/mbilski/go-yaml/internal/errors"
+	"github.com/mbilski/go-yaml/lexer"
+	"github.com/mbilski/go-yaml/token"
 	"golang.org/x/xerrors"
 )
 

@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
-	"github.com/goccy/go-yaml/parser"
-	"github.com/goccy/go-yaml/printer"
-	"github.com/goccy/go-yaml/token"
+	"github.com/mbilski/go-yaml/ast"
+	"github.com/mbilski/go-yaml/internal/errors"
+	"github.com/mbilski/go-yaml/parser"
+	"github.com/mbilski/go-yaml/printer"
+	"github.com/mbilski/go-yaml/token"
 	"golang.org/x/xerrors"
 )
 
@@ -418,7 +418,7 @@ func (e *Encoder) encodeStruct(value reflect.Value, column int) (ast.Node, error
 		}
 		fieldValue := value.FieldByName(field.Name)
 		structField := structFieldMap[field.Name]
-		if structField.IsOmitEmpty && e.isZeroValue(fieldValue) {
+		if e.isZeroValue(fieldValue) {
 			// omit encoding
 			continue
 		}

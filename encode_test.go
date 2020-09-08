@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/ast"
+	"github.com/mbilski/go-yaml"
+	"github.com/mbilski/go-yaml/ast"
 )
 
 var zero = 0
@@ -217,7 +217,7 @@ func TestEncoder(t *testing.T) {
 			},
 		},
 		{
-			"a: 1\nb: []\n",
+			"a: 1\n",
 			struct {
 				A int
 				B []string
@@ -226,7 +226,7 @@ func TestEncoder(t *testing.T) {
 			},
 		},
 		{
-			"a: 1\nb: []\n",
+			"a: 1\n",
 			struct {
 				A int
 				B []string
@@ -235,7 +235,7 @@ func TestEncoder(t *testing.T) {
 			},
 		},
 		{
-			"a: {}\n",
+			"{}\n",
 			struct {
 				A map[string]interface{}
 			}{
@@ -261,7 +261,7 @@ func TestEncoder(t *testing.T) {
 			},
 		},
 		{
-			"a: \"\"\n",
+			"{}\n",
 			struct {
 				A string
 			}{
@@ -269,7 +269,7 @@ func TestEncoder(t *testing.T) {
 			},
 		},
 		{
-			"a: null\n",
+			"{}\n",
 			struct {
 				A *string
 			}{
@@ -285,7 +285,7 @@ func TestEncoder(t *testing.T) {
 			},
 		},
 		{
-			"a: null\n",
+			"{}\n",
 			struct {
 				A *int
 			}{
@@ -318,7 +318,7 @@ func TestEncoder(t *testing.T) {
 		},
 
 		{
-			"a:\n  y: \"\"\n",
+			"a: {}\n",
 			struct {
 				A *struct {
 					X string `yaml:"x,omitempty"`
@@ -358,7 +358,7 @@ func TestEncoder(t *testing.T) {
 		},
 
 		{
-			"a: {x: 0}\n",
+			"a: {}\n",
 			struct {
 				A *struct{ X, y int } `yaml:"a,omitempty,flow"`
 			}{&struct{ X, y int }{}},

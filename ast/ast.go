@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goccy/go-yaml/token"
+	"github.com/mbilski/go-yaml/token"
 	"golang.org/x/xerrors"
 )
 

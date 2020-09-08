@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/ast"
+	"github.com/mbilski/go-yaml"
+	"github.com/mbilski/go-yaml/ast"
 	"golang.org/x/xerrors"
 )
 
